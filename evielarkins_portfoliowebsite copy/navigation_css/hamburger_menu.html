@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8"/>
+    <!-- TITLE -->
+    <title> hamburger </title>
+    <!-- LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+  </head>
+<body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  font-family: 'Almarai', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+.checkbox,
+.hamburger {
+  position: fixed;
+  top: 50px; left: 50px;
+  width: 45px;
+  height: 45px;
+}
+.checkbox {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 22;
+}
+.hamburger {
+  padding: 10px;
+  z-index: 11;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.lines {
+  background-color: black;
+  position: relative;
+  height: 2px;
+  width: 100%;
+}
+.lines::before,
+.lines::after {
+  background-color: black;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+}
+.lines::before {top: -7px;}
+.lines::after {top: 7px;}
+
+.checkbox:checked + .hamburger .wrapper {
+  transform: rotate(135deg);
+}
+.checkbox:checked + .hamburger .wrapper .lines::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+.checkbox:checked + .hamburger .wrapper .lines::after {
+  opacity: 0;
+}
+
+
+</style>
+
+<input class="checkbox" type="checkbox" />
+<div class="hamburger">
+  <div class="wrapper">
+    <div class="lines">
+    </div>
+  </div>
+</div>
+
+
+<style>
+.menu {
+  position: fixed;
+  top: 0; bottom: 0;
+  left: -300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.75s ease-in-out;
+}
+.menu a {
+  color: transparent;
+  text-decoration: none;
+  width: 210px;
+  padding: 10px 0;
+  transition: 0.75s ease-in-out;
+}
+.menu a:first-child {
+  margin-top: 150px;
+}
+.checkbox:checked ~ .menu {
+  background-color: rgba(51, 193, 215, 30%);
+  left: 0;
+
+}
+.checkbox:checked ~ .menu a {
+  color: black;
+
+}
+
+.submenu {
+  font-weight: 400;
+}
+</style>
+
+
+
+<div class="menu">
+  <a href="#">SAIC PROJECTS</a>
+      <a class="submenu" href=#>publication design </a>
+      <a class="submenu"href=#>logo design </a>
+      <a class="submenu"href=#>poster design </a>
+      <a class="submenu"href=#>data vizualization </a>
+<a href="#">PROFESSIONAL PROJECTS</a>
+    <a class="submenu" href=#>website redesign</a>
+    <a class="submenu" href=#>catalog refresh</a>
+</div>
+</body>

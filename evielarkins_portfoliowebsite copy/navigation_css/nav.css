@@ -1,0 +1,157 @@
+/*header*/
+
+.header {
+  display: flex;
+  position: fixed;
+  background: whitesmoke;
+  min-width: 100vw;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.header-nav {
+  display: flex;
+  margin-left: auto;
+  padding: 20px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+}
+h1 a {
+  display: flex;
+  padding-left: 40px;
+  font-size: 25px;
+  font-weight: 800;
+  color: rgb(51, 193, 215)
+}
+
+a:active,
+a:hover {
+  color: rgb(51, 193, 215);
+}
+
+h1 a:hover {
+  color: rgb(51, 193, 215);
+}
+/* .work {
+  color: rgb(51, 193, 215);
+} */
+
+
+
+
+
+/* HAMBURGER LINES */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.hammenu {
+  font-family: 'Almarai', sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+}
+.checkbox,
+.hamburger {
+  position: fixed;
+  top: 100px; left: 35px;
+  width: 45px;
+  height: 45px;
+}
+.checkbox {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 22;
+}
+.hamburger {
+  padding: 10px;
+  z-index: 11;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.lines {
+  background-color: black;
+  position: relative;
+  height: 2px;
+  width: 100%;
+}
+.lines::before,
+.lines::after {
+  background-color: black;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+}
+.lines::before {top: -7px;}
+.lines::after {top: 7px;}
+
+.checkbox:checked + .hamburger .wrapper {
+  transform: rotate(135deg);
+}
+.checkbox:checked + .hamburger .wrapper .lines::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+.checkbox:checked + .hamburger .wrapper .lines::after {
+  opacity: 0;
+}
+
+
+/* hamburger menu */
+
+.hammenu {
+  position: fixed;
+  top: 0; bottom: 0;
+  left: -300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.75s ease-in-out;
+}
+.hammenu a {
+  color: transparent;
+  text-decoration: none;
+  width: 205px;
+  padding: 10px 0;
+  font-size: 15px;
+  transition: 0.75s ease-in-out;
+}
+.hammenu a:first-child {
+  margin-top: 175px;
+}
+.checkbox:checked ~ .hammenu {
+  background-color: rgba(51, 193, 215, 100%);
+  left: 0;
+
+}
+.checkbox:checked ~ .hammenu a {
+  color: black;
+
+}
+.hammenu {
+  font-weight: 700;
+}
+.submenu {
+  font-weight: 400;
+
+}

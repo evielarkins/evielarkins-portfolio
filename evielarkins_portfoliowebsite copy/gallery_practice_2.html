@@ -1,0 +1,197 @@
+
+<!doctype html>
+<html>
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8"/>
+    <!-- TITLE -->
+    <title> evie larkins - work </title>
+    <!-- LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navigation_css/nav.css">
+    <link rel="stylesheet" href="work_page/work.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+
+  </head>
+
+<body>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  body {
+    background-color: whitesmoke;
+    font: 30px/1.4 'Almarai', sans-serif;
+  }
+  .pagewrapper {
+    display: flex;
+  }
+  .work {
+    color: rgb(51, 193, 215);
+  }
+  .header {
+    background-color: whitesmoke;
+    z-index: 35;
+  }
+  a {
+    color: black;
+  }
+
+  /* .row {
+    display: flex;
+    margin: auto;
+  }
+
+  .column {
+    flex: 33.33%;
+    padding: 10px;
+    flex-direction: row;
+  }
+
+  .subhead {
+    margin-top: 100px;
+    padding: 30px;
+  } */
+
+  .row img {
+    display: block;
+    width: 100%;
+  }
+  .row img:hover {
+    opacity: 25%;
+  }
+  /*
+  =mobile first */
+  .row {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 100px;
+    padding: 0 20px;
+  }
+  .row > div {
+    padding: 20px;
+  }
+  .row > div a {
+    padding: 0;
+  }
+  /*
+  =medium screen size */
+  @media (min-width: 600px) {
+    .row {
+      flex-flow: row wrap;
+    }
+    .row > div {
+      flex: 0 1 50%;
+    }
+  }
+  /*
+  =large screen size */
+  @media (min-width: 992px) {
+    .row > div {
+      flex: 0 1 33.3333%;
+    }
+  }
+
+
+</style>
+
+
+<div class="pagewrapper">
+  <div class="header">
+    <h1><a href="../landing_page/landing_page.html">evie larkins</a></h1>
+    <div class="header-nav">
+      <ul>
+        <li><a class="work" href="work_v_2.html">work</a>
+        <li><a class="play"href="../PLAY_PAGE/play.html">play</a>
+        <li><a class="about"href="../ABOUT_PAGE/about.html">about</a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="subhead">
+
+      <div class="row">
+
+        <div class="">
+          <a href="../project_pages/borges.html">
+            <img src="images/borges.png">
+          </a>
+        </div>
+
+        <div class="">
+          <a href="../project_pages/brian.html">
+            <img src="images/brian.png">
+          </a>
+        </div>
+
+        <div class="">
+          <a href="../project_pages/fifty.html">
+            <img src="images/50mil.png">
+          </a>
+        </div>
+
+        <div class="">
+          <a href="../project_pages/czbg.html">
+            <img src="images/czbg.png" style="width:100%">
+          </a>
+        </div>
+
+        <div>
+          <a href="../project_pages/hdlns_catalog.html">
+            <img src="images/catalog.png" style="width:100%">
+          </a>
+        </div>
+
+        <div>
+          <a href="../project_pages/economic.html">
+            <img src="images/economic.png" style="width:100%">
+          </a>
+        </div>
+
+        <div>
+          <a href="../project_pages/hdlns_website.html">
+            <img src="images/makehdlns.png" style="width:100%">
+          </a>
+        </div>
+
+        <div>
+          <a href="../project_pages/miles_davis.html">
+            <img src="images/miles-davis.png" style="width:100%">
+          </a>
+        </div>
+
+        <div>
+          <a href="../project_pages/moma.html">
+            <img src="images/moma.png" style="width:100%">
+          </a>
+        </div>
+
+        <div class="column">
+          <a href="../project_pages/silken_fetters.html">
+            <img src="images/silken.png" style="width:100%">
+          </a>
+        </div>
+
+        <div class="column">
+          <a href="../project_pages/tfods.html">
+            <img src="images/tfods.png" style="width:100%">
+          </a>
+        </div>
+
+        <div class="column">
+          <a href="../project_pages/bwong.html">
+            <img src="images/bw.png" style="width:100%">
+          </a>
+        </div>
+      </div>
+      <!-- END ROW -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+</body>

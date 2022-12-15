@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8"/>
+    <!-- TITLE -->
+    <title> evie larkins - work </title>
+    <!-- LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../navigation_css/nav.css">
+    <link rel="stylesheet" href="../work_page/work.css">
+  </head>
+
+
+<body>
+<!--HEADER HTML-->
+
+<style>
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 200px;
+}
+
+.images img {
+  max-width: 100%;
+  width: 500px;
+}
+
+
+</style>
+
+<div class="pagewrapper">
+  <div class="header">
+    <h1><a href="../landing_page/landing_page.html">evie larkins</a></h1>
+    <div class="header-nav">
+      <ul>
+        <li><a class="work" href="work_v_2.html">work</a>
+        <li><a class="play"href="../PLAY_PAGE/play.html">play</a>
+        <li><a class="about"href="../ABOUT_PAGE/about.html">about</a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <ul class="images">
+      <li>
+        <img src="../tlon_images/tlon1.png" alt="Image 1">
+        <div class="caption">Image 1</div>
+      </li>
+      <li>
+        <img src="../tlon_images/tlon2.png" alt="Image 2">
+        <div class="caption">Image 2</div>
+      </li>
+      <li>
+        <img src="../tlon_images/tlon3.png" alt="Image 3">
+        <div class="caption">Image 3</div>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+  // Get the images in the gallery
+  const images = document.querySelectorAll('.images img');
+
+  // Attach a click event listener to each image
+  images.forEach(img => img.addEventListener('click', openLightbox));
+
+  function openLightbox(event) {
+    // Get the image that was clicked
+    const clickedImage = event.currentTarget;
+
+    // Create an overlay element
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+
+    // Create a lightbox container
+    const lightbox = document.createElement('div');
+    lightbox.classList.add('lightbox');
+
+    // Create an image element for the clicked image
+    const lightboxImage = document.createElement('img');
+    lightboxImage.src = clickedImage.src;
+
+    // Create a caption element for the clicked image
+    const lightboxCaption = document.createElement('div');
+    light
+  }
+
+    </script>
+  </body>
